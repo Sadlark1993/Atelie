@@ -1,0 +1,289 @@
+/*Botao fixo whats*/
+.call-fixed a {
+  position: fixed;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  z-index: 10;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.call-fixed .grid-16 {
+  padding-right: 60px;
+  text-align: right;
+}
+
+/*Cabecalho*/
+.home-cabecalho {
+  background: url("../img/Foto-intro.png");
+  height: 380px;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.home-cabecalho h1 {
+  font-size: 3.7em;
+  font-family: cooper-black-std, Georgia, "Times New Roman", Times, serif;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  margin-top: 76px;
+}
+
+.home-cabecalho p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  font-style: italic;
+  text-shadow: 0 2px 4px black;
+  width: 600px;
+  margin: 20px auto;
+}
+
+.produtos ul {
+  margin-bottom: 30px;
+}
+
+.produtos ul li {
+  margin-bottom: 20px;
+}
+
+.produtos ul li img {
+  display: block;
+}
+
+.produtos ul li div {
+  width: 300px;
+  height: 100px;
+  background: #c96a02;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: white;
+}
+
+.produtos ul .grid-8 div {
+  width: 460px;
+}
+
+.produtos ul li p {
+  font-size: 1.28em;
+  text-shadow: 0 3px 10px black;
+}
+
+/*Botao Call to Action*/
+.call {
+  text-align: center;
+}
+
+.call p {
+  color: #c96a02;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 12px;
+}
+
+.call a {
+  display: block;
+  width: 180px;
+  height: 60px;
+  background-color: #c96a02;
+  margin: 0 auto;
+  text-align: center;
+  border: black 2px solid;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  padding-top: 20px;
+}
+
+.call a p {
+  color: white;
+  position: relative;
+  left: -20px;
+}
+
+.call a img {
+  display: block;
+  position: absolute;
+  right: 19px;
+  top: 8px;
+}
+
+.call a:hover {
+  background-color: #ff8801;
+}
+
+/*Contato*/
+
+.contato {
+  margin-bottom: 40px;
+}
+
+.contato h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 2.6em;
+  text-align: center;
+  color: #c96a02;
+  font-weight: bold;
+}
+
+.contato h2:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #c96a02;
+  margin: 8px auto;
+}
+
+.contato form label {
+  display: block;
+  font-size: 1.28em;
+  margin-bottom: 5px;
+}
+
+.contato form input {
+  width: 100%;
+  border: #c96a02 solid 3px;
+  padding: 8px 10px;
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.contato form textarea {
+  display: block;
+  width: 100%;
+  border: #c96a02 solid 3px;
+  padding: 8px 10px;
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 20px;
+  height: 160px;
+}
+
+#enviar {
+  display: block;
+  width: 180px;
+  height: 56px;
+  background-color: #c96a02;
+  margin: 0 auto;
+  text-align: center;
+  border: black 2px solid;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+}
+
+#enviar:hover {
+  background-color: #ff8801;
+}
+
+.dados {
+  padding-left: 80px;
+}
+
+.dados h3 {
+  font-size: 1.28em;
+  color: #c96a02;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.dados p {
+  font-size: 1.28em;
+  line-height: 2em;
+}
+
+.dados .ultimo {
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+.contato ul li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/*Quote final*/
+.final {
+  height: 200px;
+  background-image: url("/img/img-fim.png");
+  background-size: cover;
+  text-align: center;
+}
+
+.final blockquote {
+  font-size: 1.71em;
+  width: 560px;
+  margin: 0 auto;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.final blockquote:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  margin: 8px auto;
+  margin-top: 20px;
+}
+
+.final blockquote:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  margin: 8px auto;
+  margin-bottom: 14px;
+}
+
+.final cite {
+  font-size: 1.42em;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/*footer*/
+footer {
+  background-color: black;
+  color: white;
+  height: 30px;
+}
+
+footer p {
+  margin-top: 5px;
+}
+
+/*Animacao js*/
+.js [data-anime] {
+  opacity: 0;
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+}
+
+/*Mensagens formularios*/
+
+#form-erro {
+  color: red;
+}
+#form-sucesso {
+  color: green;
+}
+
+.nao-aparece {
+  height: 0;
+  visibility: hidden;
+  position: absolute;
+}

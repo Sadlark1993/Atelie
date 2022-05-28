@@ -1,0 +1,48 @@
+
+/*Estilo para smartphone*/
+@media only screen and (max-width: 787px){
+
+  .call-fixed{
+    position:fixed;
+    z-index: 10;
+  }
+
+  .home-cabecalho {
+    padding-top:60px
+  }
+
+  .home-cabecalho h1 {
+    font-size: 2.5em;
+    margin-top:0
+  }
+
+  .home-cabecalho p {
+    width: 300px;
+  }
+.call-fixed .grid-16 {
+  padding-right: 0;
+}
+.produtos ul .grid-8 div {
+    width: 300px;
+    padding-bottom: 10px;
+    height:fit-content;
+  }
+.produtos ul .grid-8 img{
+  width:300px;
+}
+
+.dados{
+  padding-left: 0;
+}
+
+.final blockquote {
+  font-size: 1.5em;
+  width: 300px;
+
+}
+
+footer{
+  height: 50px;
+}
+
+}
