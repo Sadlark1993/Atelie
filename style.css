@@ -657,7 +657,7 @@ ul {
   text-align: right;
 }
 
-/*Cabecalho
+/*Cabecalho*/
 .home-cabecalho {
   background: url("img/Foto-intro.png");
   height: 380px;
@@ -666,7 +666,7 @@ ul {
   color: white;
   margin-bottom: 40px;
 }
-*/
+
 .home-cabecalho h1 {
   font-size: 3.7em;
   font-family: cooper-black-std, Georgia, "Times New Roman", Times, serif;
