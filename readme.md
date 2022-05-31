@@ -1,3 +1,3 @@
 Aprendendo Implantação Contínua
 
-implantando.
+implantando...
