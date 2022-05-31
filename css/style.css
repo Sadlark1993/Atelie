@@ -17,7 +17,7 @@
 
 /*Cabecalho*/
 .home-cabecalho {
-  /*background: url("../img/Foto-intro.png");*/
+  background: url("../img/Foto-intro.png");
   height: 380px;
   background-size: cover;
   text-align: center;
