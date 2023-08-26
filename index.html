@@ -1,218 +1,213 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Salgaderia Ateliê dos Salgados</title>
-		<link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salgaderia Ateliê dos Salgados</title>
+    <link rel="stylesheet" href="style.css" />
 
-		<script>
-			document.documentElement.classList.add("js");
-		</script>
-	</head>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
 
-	<body>
-		<!--Cabecalho-->
-		<div class="call-fixed">
-			<div class="grid-16">
-				<a href="https://web.whatsapp.com" target="_blank"
-					><img src="img/icons8-whatsapp.svg" alt="whatsapp"
-				/></a>
-			</div>
-		</div>
-		<section class="home-cabecalho">
-			<div class="container">
-				<h1 data-anime="400">Salgados e Kits de Festa!!!</h1>
-				<blockquote data-anime="800">
-					<p>
-						"Dinheiro não compra felicidade. Mas compra coxinha, você já viu
-						alguém triste comendo coxinha?"
-					</p>
-				</blockquote>
-			</div>
-		</section>
-		<section data-anime="800" class="container produtos">
-			<ul>
-				<li class="grid-1-3">
-					<img src="img/Coxinha.png" alt="Coxinha" />
-					<div>
-						<p>Coxinha - unidade: R$ 3,00 <br />Sabores: frango, carne.</p>
-					</div>
-				</li>
-				<li class="grid-1-3">
-					<img src="img/salsicha.png" alt="Salsicha empanada" />
-					<div>
-						<p>Salsicha empanada - unidade: R$ 3,00</p>
-					</div>
-				</li>
-				<li class="grid-1-3">
-					<img src="img/esfiha.png" alt="Esfirra" />
-					<div>
-						<p>
-							Esfirra - unidade: R$ 3,50 <br />Sabores: frango, carne, presunto
-							e queijo.
-						</p>
-					</div>
-				</li>
-				<li class="grid-1-3">
-					<img src="img/risolis.png" alt="Risólis" />
-					<div>
-						<p>
-							Risólis - unidade: R$ 3,00 <br />Sabores: frango, carne, presunto
-							e queijo.
-						</p>
-					</div>
-				</li>
-				<li class="grid-1-3">
-					<img src="img/brigadeiro.png" alt="Brigadeiro" />
-					<div>
-						<p>Brigadeiro - cento: R$ 40,00</p>
-					</div>
-				</li>
-				<li class="grid-1-3">
-					<img src="img/beijinho.png" alt="beijinho" />
-					<div>
-						<p>Beijinho - cento: R$ 40,00</p>
-					</div>
-				</li>
-				<li class="grid-1-3">
-					<img src="img/buque-cox.png" alt="Buquet de coxinha" />
-					<div>
-						<p>
-							Buquet 10 coxinhas - unidade: R$ 25,00 <br />Sabores: frango,
-							carne, misto.
-						</p>
-					</div>
-				</li>
-				<li class="grid-1-3">
-					<img
-						src="img/salgadinhos--balde-mister-fry.png"
-						alt="Balde de coxinha"
-					/>
-					<div>
-						<p>
-							Balde 30 coxinhas - unidade: R$ 80,00 <br />Sabores: frango,
-							carne, misto.
-						</p>
-					</div>
-				</li>
-				<li class="grid-1-3">
-					<img
-						src="img/balde-para-frango-frito-16.png"
-						alt="Balde de frango frito"
-					/>
-					<div>
-						<p>Balde de frango frito - unidade: R$ 80,00</p>
-					</div>
-				</li>
-				<li class="grid-8">
-					<img src="img/kit-festa.png" alt="Kit de Salgados" />
-					<div>
-						<p>
-							Kit de festa para 10 pessoas: R$ 60,00<br />
-							Produtos: 20 mini coxinhas, 20 mini esfirras, 30 brigadeiros e 30
-							beijinhos.
-						</p>
-					</div>
-				</li>
-				<li class="grid-8">
-					<img
-						src="img/kit-festa-infantil-em-casa-ateliedocefelicidade.png"
-						alt="kit de festa"
-					/>
-					<div>
-						<p>
-							Kit de festa para 30 pessoas: R$ 140,00<br />Produtos: 50 mini
-							coxinhas, 50 mini esfirras, 80 brigadeiros e 80 beijinhos.
-						</p>
-					</div>
-				</li>
-			</ul>
-			<div class="call">
-				<p>Clique aqui para entrar em contato via WhatsApp</p>
-				<a href="https://web.whatsapp.com" target="_blank">
-					<p>WhatsApp</p>
-					<img src="img/icons8-whatsapp.svg" alt="WhatsApp" />
-				</a>
-			</div>
-		</section>
-		<section class="container contato">
-			<h2>Encomenda</h2>
-			<form
-				id="form-encomenda"
-				method="POST"
-				action="enviar-sendgrid.php"
-				class="grid-8 formphp"
-			>
-				<label for="nome">Nome*</label>
-				<input type="text" id="nome" name="nome" required />
-				<label for="email">E-mail*</label>
-				<input type="email" id="email" name="email" required />
-				<label for="telefone">Telefone</label>
-				<input type=" text" id="telefone" name="telefone" />
-				<label class="nao-aparece"
-					>Se você não é um robô, deixe-me em branco</label
-				>
-				<input type="text" class="nao-aparece" name="leaveblank" />
-				<label class="nao-aparece"
-					>Se você não é um robô, nao mude esse campo</label
-				>
-				<input
-					type="text"
-					class="nao-aparece"
-					name="dontchange"
-					value="http://"
-				/>
-				<label for="mensagem">Mensagem*</label>
-				<textarea name="mensagem" id="mensagem"></textarea>
-				<button id="enviar" name="enviar" type="submit">Enviar</button>
-			</form>
-			<div class="grid-8 dados">
-				<h3>Dados</h3>
-				<p>-claudio.zi.junior@gmail.com</p>
-				<p>-65 9 9269-0517</p>
-				<p>-Rua Sá Porto, numero 20, Jardim Petrópolis</p>
-				<h3>Monte sua encomenda</h3>
-				<p class="ultimo">
-					Especifique os produtos e a quantidade que você quer encomendar.
-				</p>
-				<h3>Redes Sociais</h3>
-				<ul>
-					<li>
-						<a href="https://facebook.com" target="_blank"
-							><img src="img/facebook.svg" alt="facebook"
-						/></a>
-					</li>
-					<li>
-						<a href="https://instagram.com" target="_blank"
-							><img src="img/instagram.svg" alt="instagram"
-						/></a>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<div class="final">
-			<div class="container">
-				<blockquote>
-					"O segredo da felicidade está em ter um genuíno interesse pelos
-					mínimos detalhes da vida cotidiana."
-				</blockquote>
-				<cite>Marisa da Lambida</cite>
-			</div>
-		</div>
-		<footer>
-			<div class="container">
-				<div class="grid-16">
-					<p>Ateliê dos Salgados, 2021 - Todos os direitos reservados.</p>
-				</div>
-			</div>
-		</footer>
+  <body>
+    <!--Cabecalho-->
+    <div class="call-fixed">
+      <div class="grid-16">
+        <a href="https://web.whatsapp.com" target="_blank"
+          ><img src="img/icons8-whatsapp.svg" alt="whatsapp"
+        /></a>
+      </div>
+    </div>
+    <section class="home-cabecalho">
+      <div class="container">
+        <h1 data-anime="400">Salgados e Kits de Festa!!!</h1>
+        <blockquote data-anime="800">
+          <p>
+            "Dinheiro não compra felicidade. Mas compra coxinha, você já viu
+            alguém triste comendo coxinha?"
+          </p>
+        </blockquote>
+      </div>
+    </section>
+    <section data-anime="800" class="container produtos">
+      <ul>
+        <li class="grid-1-3">
+          <img src="img/Coxinha.png" alt="Coxinha" />
+          <div>
+            <p>Coxinha - unidade: R$ 3,00 <br />Sabores: frango, carne.</p>
+          </div>
+        </li>
+        <li class="grid-1-3">
+          <img src="img/salsicha.png" alt="Salsicha empanada" />
+          <div>
+            <p>Salsicha empanada - unidade: R$ 3,00</p>
+          </div>
+        </li>
+        <li class="grid-1-3">
+          <img src="img/esfiha.png" alt="Esfirra" />
+          <div>
+            <p>
+              Esfirra - unidade: R$ 3,50 <br />Sabores: frango, carne, presunto
+              e queijo.
+            </p>
+          </div>
+        </li>
+        <li class="grid-1-3">
+          <img src="img/risolis.png" alt="Risólis" />
+          <div>
+            <p>
+              Risólis - unidade: R$ 3,00 <br />Sabores: frango, carne, presunto
+              e queijo.
+            </p>
+          </div>
+        </li>
+        <li class="grid-1-3">
+          <img src="img/brigadeiro.png" alt="Brigadeiro" />
+          <div>
+            <p>Brigadeiro - cento: R$ 40,00</p>
+          </div>
+        </li>
+        <li class="grid-1-3">
+          <img src="img/beijinho.png" alt="beijinho" />
+          <div>
+            <p>Beijinho - cento: R$ 40,00</p>
+          </div>
+        </li>
+        <li class="grid-1-3">
+          <img src="img/buque-cox.png" alt="Buquet de coxinha" />
+          <div>
+            <p>
+              Buquet 10 coxinhas - unidade: R$ 25,00 <br />Sabores: frango,
+              carne, misto.
+            </p>
+          </div>
+        </li>
+        <li class="grid-1-3">
+          <img
+            src="img/salgadinhos--balde-mister-fry.png"
+            alt="Balde de coxinha"
+          />
+          <div>
+            <p>
+              Balde 30 coxinhas - unidade: R$ 80,00 <br />Sabores: frango,
+              carne, misto.
+            </p>
+          </div>
+        </li>
+        <li class="grid-1-3">
+          <img
+            src="img/balde-para-frango-frito-16.png"
+            alt="Balde de frango frito"
+          />
+          <div>
+            <p>Balde de frango frito - unidade: R$ 80,00</p>
+          </div>
+        </li>
+        <li class="grid-8">
+          <img src="img/kit-festa.png" alt="Kit de Salgados" />
+          <div>
+            <p>
+              Kit de festa para 10 pessoas: R$ 60,00<br />
+              Produtos: 20 mini coxinhas, 20 mini esfirras, 30 brigadeiros e 30
+              beijinhos.
+            </p>
+          </div>
+        </li>
+        <li class="grid-8">
+          <img
+            src="img/kit-festa-infantil-em-casa-ateliedocefelicidade.png"
+            alt="kit de festa"
+          />
+          <div>
+            <p>
+              Kit de festa para 30 pessoas: R$ 140,00<br />Produtos: 50 mini
+              coxinhas, 50 mini esfirras, 80 brigadeiros e 80 beijinhos.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="call">
+        <p>Clique aqui para entrar em contato via WhatsApp</p>
+        <a href="https://web.whatsapp.com" target="_blank">
+          <p>WhatsApp</p>
+          <img src="img/icons8-whatsapp.svg" alt="WhatsApp" />
+        </a>
+      </div>
+    </section>
+    <section class="container contato">
+      <h2>Encomenda</h2>
+      <form id="form-encomenda" method="POST">
+        <label for="nome">Nome*</label>
+        <input type="text" id="nome" name="nome" required />
+        <label for="email">E-mail*</label>
+        <input type="email" id="email" name="email" required />
+        <label for="telefone">Telefone</label>
+        <input type=" text" id="telefone" name="telefone" />
+        <label class="nao-aparece"
+          >Se você não é um robô, deixe-me em branco</label
+        >
+        <input type="text" class="nao-aparece" name="leaveblank" />
+        <label class="nao-aparece"
+          >Se você não é um robô, nao mude esse campo</label
+        >
+        <input
+          type="text"
+          class="nao-aparece"
+          name="dontchange"
+          value="http://"
+        />
+        <label for="mensagem">Mensagem*</label>
+        <textarea name="mensagem" id="mensagem"></textarea>
+        <button id="enviar" name="enviar" type="submit">Enviar</button>
+      </form>
+      <div class="grid-8 dados">
+        <h3>Dados</h3>
+        <p>-claudio.zi.junior@gmail.com</p>
+        <p>-65 9 9269-0517</p>
+        <p>-Rua Sá Porto, numero 20, Jardim Petrópolis</p>
+        <h3>Monte sua encomenda</h3>
+        <p class="ultimo">
+          Especifique os produtos e a quantidade que você quer encomendar.
+        </p>
+        <h3>Redes Sociais</h3>
+        <ul>
+          <li>
+            <a href="https://facebook.com" target="_blank"
+              ><img src="img/facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank"
+              ><img src="img/instagram.svg" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="final">
+      <div class="container">
+        <blockquote>
+          "O segredo da felicidade está em ter um genuíno interesse pelos
+          mínimos detalhes da vida cotidiana."
+        </blockquote>
+        <cite>Marisa da Lambida</cite>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="grid-16">
+          <p>Ateliê dos Salgados, 2021 - Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
 
-		<!--Javascript-->
-		<script src="js/simple-anime.js"></script>
-		<script src="js/simple-form.js"></script>
-		<script src="js/script.js"></script>
-		<!--Fim Javascript-->
-	</body>
+    <!--Javascript-->
+    <script src="js/simple-anime.js"></script>
+    <script src="js/simple-form.js"></script>
+    <script src="js/script.js"></script>
+    <!--Fim Javascript-->
+  </body>
 </html>
